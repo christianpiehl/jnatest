@@ -22,6 +22,7 @@ public class Main {
 		// posix.rename("newdir", "renamedir");
 	}
 
+	@SuppressWarnings("unused")
 	private static void testKernel32Library() {
 		Kernel32Library lib = (Kernel32Library) Native.loadLibrary("kernel32", Kernel32Library.class);
 		lib.Beep(698, 500);
